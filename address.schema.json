@@ -1,9 +1,11 @@
 {
-  "type": "object",
-  "properties": {
-    "number": { "type": "string" },
-    "city":   { "type": "string" },
-    "state":  { "type": "string" }
-  },
-  "required": ["city", "state"]
+  "address": {
+    "type": "object",
+    "properties": {
+      "number": { "type": "string" },
+      "city":   { "type": "string" },
+      "state":  { "type": "string" }
+    },
+    "required": ["city", "state"]
+  }
 }
