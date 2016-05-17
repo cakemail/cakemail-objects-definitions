@@ -48,7 +48,7 @@
     },
     "coordinates":  {
       "description": "",
-      "$ref": "https://rawgit.com/manutrix/cakemail-objects-definitions/master/coordinate.schema.json#/address"
+      "$ref": "https://rawgit.com/manutrix/cakemail-objects-definitions/master/coordinate.schema.json"
     }
   },
   "required": ["default"]
