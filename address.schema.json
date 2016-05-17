@@ -52,5 +52,6 @@
       "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/coordinate.schema.json"
     }
   },
-  "required": ["default"]
+  "required": ["default"],
+  "additionalProperties": false
 }
