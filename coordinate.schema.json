@@ -10,8 +10,13 @@
       "description": "Object that contains the coordinates of the address in degrees, minutes, secondes",
       "$ref": "#/definitions/coordinate"
     }
+
   },
   "additionalProperties": false,
+  "anyOf": [
+     {"required": ["dd"]},
+     {"required": ["dms"]}
+  ],
 
   "definitions": {
     "coordinate": {
