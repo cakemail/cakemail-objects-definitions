@@ -5,7 +5,7 @@
       "description": "Defines if this address is the main address. In an array of addresses, only one will have this value to TRUE.",
       "type": "boolean",
       "default" : true
-    }
+    },
     "type": {
       "description": "This value will be used to define a group of addresses. Multiple addresses will be able to have the same type. e.g.: Business, Home, ...",
       "type": "string"
