@@ -1,9 +1,55 @@
 {
   "type": "object",
   "properties": {
-    "number": { "type": "string" },
-    "city":   { "type": "string" },
-    "state":  { "type": "string" }
+    "default": {
+      "description": "Defines if this address is the main address. In an array of addresses, only one will have this value to TRUE.",
+      "type": "boolean",
+      "default" : true
+    }
+    "type": {
+      "description": "This value will be used to define a group of addresses. Multiple addresses will be able to have the same type. e.g.: Business, Home, ...",
+      "type": "string"
+    },
+    "name":   {
+      "description": "This value will be used to identify this specific address into the group. e.g.:type = business and name = office, type = business and name = billing",
+      "type": "string"
+    },
+    "number":  {
+      "description": "The street number.",
+      "type": "string"
+    },
+    "street":  {
+      "description": "The street name.",
+      "type": "string"
+    },
+    "app":  {
+      "description": "The apartment, suite, local, ...",
+      "type": "string"
+    },
+    "city":  {
+      "description": "The city name.",
+      "type": "string"
+    },
+    "zip":  {
+      "description": "The zip code or postal code.",
+      "type": "string"
+    },
+    "state":  {
+      "description": "The state, province or region name.",
+      "type": "string"
+    },
+    "country":  {
+      "description": "The country name.",
+      "type": "string"
+    },
+    "timezone":  {
+      "description": "The timezone of the location.",
+      "type": "string"
+    },
+    "coordinates":  {
+      "description": "",
+      "$ref": "https://rawgit.com/manutrix/cakemail-objects-definitions/master/coordinate.schema.json#/address"
+    }
   },
-  "required": ["city", "state"]
+  "required": ["default"]
 }
