@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "description": "Object that contains the coordinates.",
+  "properties": {
+    "dd": {
+      "description": "Object that contains the coordinates in decimal degrees.",
+      "$ref": "#/definitions/coordinate"
+    },
+    "dms": {
+      "description": "Object that contains the coordinates of the address in degrees, minutes, secondes",
+      "$ref": "#/definitions/coordinate"
+    }
+  },
+  "additionalProperties": false,
+
+  "definitions": {
+    "coordinate": {
+      "type": "object",
+      "properties": {
+        "long": {
+          "description": "The longitude value",
+          "type": "string"
+        },
+        "lat": {
+          "description": "The latitude value",
+          "type": "string"
+        }
+      },
+      "required": ["long", "lat"],
+      "additionalProperties": false
+    }
+  }
+}
