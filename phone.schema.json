@@ -1,1 +1,36 @@
-{}
+{
+  "type": "object",
+  "properties": {
+    "default": {
+      "description": "Defines if this phone number is the main phone number. In an array of phones, only one will have this value to TRUE.",
+      "type": "boolean",
+      "default" : true
+    },
+    "type": {
+      "description": "This value will be used to define a group of phone numbers. Multiple phone numbers will be able to have the same type. e.g.: Business, Home, ...",
+      "type": "string"
+    },
+    "name":   {
+      "description": "This value will be used to identify this specific phone number into the group. e.g.: type = business and name = support, type = business and name = administration",
+      "type": "string"
+    },
+    "network":  {
+      "description": "The type of network over which the signal travel.",
+      "type": "string"
+    },
+    "carrier":  {
+      "description": "The company that provide the service. e.g.: Bell, Videotron, Rogers, ...",
+      "type": "string"
+    },
+    "format":  {
+      "description": "The format that should be used to display the number. %d replace a number. e.g.: The number is: 5555555555, The format is \"(%d%d%d) %d%d%d-%d%d%d%d\", The display will be: (555) 555-5555",
+      "type": "string"
+    },
+    "number":  {
+      "description": "The actual phone number.",
+      "type": "string"
+    }
+  },
+  "required": ["default", "number"],
+  "additionalProperties": false
+}
