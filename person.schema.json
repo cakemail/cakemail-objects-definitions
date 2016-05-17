@@ -1,1 +1,38 @@
-{}
+{
+  "description": "Object that defines a person.",
+  "type": "object",
+  "properties": {
+    "firstname": {
+      "description": "",
+      "type": "string"
+    },
+    "lastname": {
+      "description": "",
+      "type": "string"
+    },
+    "salutation":   {
+      "description": "",
+      "type": "string"
+    },
+    "gender":  {
+      "description": "",
+      "type": "string"
+    },
+    "title":  {
+      "description": "",
+      "type": "string"
+    },
+    "language":  {
+      "description": "",
+      "type": "string"
+    },
+    "middlename":  {
+      "description": "",
+      "type": "string"
+    },
+    "addresses":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/address.schema.json" }
+    }
+  }
+}
