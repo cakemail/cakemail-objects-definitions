@@ -1,4 +1,5 @@
 {
+  "description": "Object that contains a physical address.",
   "type": "object",
   "properties": {
     "default": {
