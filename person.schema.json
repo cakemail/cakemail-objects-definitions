@@ -33,6 +33,26 @@
     "addresses":  {
       "type": "array",
       "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/address.schema.json" }
+    },
+    "emails":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/email.schema.json" }
+    },
+    "phones":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/phone.schema.json" }
+    },
+    "urls":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/url.schema.json" }
+    },
+    "images":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/image.schema.json" }
+    },
+    "companies":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/companies.schema.json" }
     }
   }
 }
