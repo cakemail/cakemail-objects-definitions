@@ -1,1 +1,61 @@
-{}
+{
+  "type": "object",
+  "description": "",
+  "properties": {
+    "color": {
+      "description": "",
+      "$ref": "#/definitions/color"
+    },
+    "font": {
+      "description": "",
+      "$ref": "#/definitions/font"
+    }
+  },
+  "additionalProperties": false,
+  "anyOf": [
+     {"required": ["color"]},
+     {"required": ["font"]}
+  ],
+
+  "definitions": {
+    "color": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "description": "",
+          "type": "string",
+          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+        },
+        "accent": {
+          "description": "",
+          "type": "string",
+          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+        }
+      },
+      "anyOf": [
+        {"required": ["primary"]},
+        {"required": ["accent"]}
+      ],
+      "additionalProperties": false
+    },
+
+    "font": {
+      "type": "object",
+      "properties": {
+        "header": {
+          "description": "",
+          "type": "string"
+        },
+        "body": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "anyOf": [
+        {"required": ["header"]},
+        {"required": ["body"]}
+      ],
+      "additionalProperties": false
+    }
+  }
+}
