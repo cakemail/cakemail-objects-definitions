@@ -2,59 +2,83 @@
   "type": "object",
   "description": "",
   "properties": {
-    "color": {
+    "source": {
       "description": "",
-      "$ref": "#/definitions/color"
+      "type": "string"
     },
-    "font": {
+    "type": {
       "description": "",
-      "$ref": "#/definitions/font"
+      "type": "string"
+    },
+    "alt": {
+      "description": "",
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "type": "string"
+    },
+    "format": {
+      "description": "",
+      "type": "string"
+    },
+    "files": {
+      "description": "",
+      "$ref": "#/definitions/files"
     }
   },
+  "required": ["files"],
   "additionalProperties": false,
-  "anyOf": [
-     {"required": ["color"]},
-     {"required": ["font"]}
-  ],
 
   "definitions": {
-    "color": {
+    "files": {
       "type": "object",
       "properties": {
-        "primary": {
+        "original": {
           "description": "",
-          "type": "string",
-          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+          "$ref": "#/definitions/data"
         },
-        "accent": {
+        "small": {
           "description": "",
-          "type": "string",
-          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+          "$ref": "#/definitions/data"
+        },
+        "medium": {
+          "description": "",
+          "$ref": "#/definitions/data"
+        },
+        "large": {
+          "description": "",
+          "$ref": "#/definitions/data"
+        },
+        "xlarge": {
+          "description": "",
+          "$ref": "#/definitions/data"
         }
       },
-      "anyOf": [
-        {"required": ["primary"]},
-        {"required": ["accent"]}
-      ],
-      "additionalProperties": false
+      "required": ["original"]
     },
-
-    "font": {
+    "data": {
       "type": "object",
       "properties": {
-        "header": {
+        "url": {
           "description": "",
-          "type": "string"
+          "type": "string",
+          "pattern": "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\/?$"
         },
-        "body": {
+        "height": {
           "description": "",
-          "type": "string"
+          "type": "integer"
+        },
+        "width": {
+          "description": "",
+          "type": "integer"
+        },
+        "weight": {
+          "description": "",
+          "type": "integer"
         }
       },
-      "anyOf": [
-        {"required": ["header"]},
-        {"required": ["body"]}
-      ],
+      "required": ["url"],
       "additionalProperties": false
     }
   }
