@@ -1,1 +1,93 @@
-{}
+{
+  "type": "object",
+  "description": "",
+  "properties": {
+    "name": {
+      "description": "",
+      "type": "string"
+    },
+    "type": {
+      "description": "",
+      "type": "string"
+    },
+    "url": {
+      "description": "",
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "type": "string"
+    },
+    "desc": {
+      "description": "",
+      "type": "string"
+    },
+    "keywords": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "icon": {
+      "description": "",
+      "type": "string"
+    },
+    "technology": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/technology"
+      }
+    },
+    "rank": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/rank"
+      }
+    }
+  },
+  "additionalProperties": false,
+
+  "definitions": {
+    "rank": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "description": "",
+          "type": "string"
+        },
+        "rank": {
+          "description": "",
+          "type": "string"
+        },
+        "timestamp": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": ["rank", "source"],
+      "additionalProperties": false
+    },
+
+    "technology": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "details": {
+         "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": ["type"],
+      "additionalProperties": false
+    }
+  }
+}
