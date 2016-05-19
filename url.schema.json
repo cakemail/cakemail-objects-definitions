@@ -12,7 +12,8 @@
     },
     "url": {
       "description": "",
-      "type": "string"
+      "type": "string",
+      "pattern": "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\/?$"
     },
     "title": {
       "description": "",
@@ -48,6 +49,7 @@
       }
     }
   },
+  "required": ["url"],
   "additionalProperties": false,
 
   "definitions": {
@@ -60,7 +62,7 @@
         },
         "rank": {
           "description": "",
-          "type": "string"
+          "type": "integer"
         },
         "timestamp": {
           "description": "",
