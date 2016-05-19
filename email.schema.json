@@ -1,1 +1,32 @@
-{}
+{
+  "type": "object",
+  "properties": {
+    "default": {
+      "description": "Defines if this email is the main phone number. In an array of emails, only one will have this value to TRUE.",
+      "type": "boolean",
+      "default" : true
+    },
+    "type": {
+      "description": "This value will be used to define a group of emails. Multiple emails will be able to have the same type. e.g.: Business, Home, ...",
+      "type": "string"
+    },
+    "name":   {
+      "description": "This value will be used to identify this specific email into the group. e.g.: type = business and name = support, type = business and name = administration",
+      "type": "string"
+    },
+    "address":  {
+      "description": "The actual email address.",
+      "type": "string"
+    },
+    "local":  {
+      "description": "The part before the @",
+      "type": "string"
+    },
+    "domain":  {
+      "description": "The part after the @",
+      "type": "string"
+    }
+  },
+  "required": ["default", "address"],
+  "additionalProperties": false
+}
