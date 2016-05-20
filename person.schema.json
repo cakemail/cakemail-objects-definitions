@@ -32,35 +32,35 @@
     },
     "addresses":  {
       "type": "array",
-      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/address.schema.json" },
+      "items": { "$ref": "address.schema.json" },
       "minItems": 1
     },
     "emails":  {
       "type": "array",
-      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/email.schema.json" },
+      "items": { "$ref": "email.schema.json" },
       "minItems": 1,
       "uniqueItems": true
     },
     "phones":  {
       "type": "array",
-      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/phone.schema.json" },
+      "items": { "$ref": "phone.schema.json" },
       "minItems": 1,
       "uniqueItems": true
     },
     "urls":  {
       "type": "array",
-      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/url.schema.json" },
+      "items": { "$ref": "url.schema.json" },
       "minItems": 1,
       "uniqueItems": true
     },
     "images":  {
       "type": "array",
-      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/image.schema.json" },
+      "items": { "$ref": "image.schema.json" },
       "minItems": 1
     },
     "companies":  {
       "type": "array",
-      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/company.schema.json" },
+      "items": { "$ref": "company.schema.json" },
       "minItems": 1
     }
   },
