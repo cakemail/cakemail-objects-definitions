@@ -1,1 +1,68 @@
-{}
+{
+  "description": "Object that defines a company.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "",
+      "type": "string"
+    },
+    "industries": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "logos":   {
+      "description": "",
+      "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/image.schema.json"
+    },
+    "number_of_employee":  {
+      "description": "",
+      "type": "integer",
+      "minimum": 1
+    },
+    "year_founded":  {
+      "description": "",
+      "type": "integer",
+      "minimum": 1800
+    },
+    "overview":  {
+      "description": "",
+      "type": "string"
+    },
+    "addresses":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/address.schema.json" },
+      "minItems": 1
+    },
+    "emails":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/email.schema.json" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "phones":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/phone.schema.json" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "urls":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/url.schema.json" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "images":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/image.schema.json" },
+      "minItems": 1
+    },
+    "eployees":  {
+      "type": "array",
+      "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/person.schema.json" },
+      "minItems": 1
+    }
+  },
+  "uniqueItems": true,
+  "additionalProperties": false
+}
