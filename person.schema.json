@@ -33,7 +33,7 @@
     "addresses":  {
       "type": "array",
       "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/address.schema.json" },
-      "minItems": 1,
+      "minItems": 1
     },
     "emails":  {
       "type": "array",
@@ -56,12 +56,12 @@
     "images":  {
       "type": "array",
       "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/image.schema.json" },
-      "minItems": 1,
+      "minItems": 1
     },
     "companies":  {
       "type": "array",
       "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/company.schema.json" },
-      "minItems": 1,
+      "minItems": 1
     }
   },
   "uniqueItems": true,
