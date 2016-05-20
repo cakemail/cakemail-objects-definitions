@@ -57,7 +57,7 @@
       "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/image.schema.json" },
       "minItems": 1
     },
-    "eployees":  {
+    "employees":  {
       "type": "array",
       "items": { "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/person.schema.json" },
       "minItems": 1
