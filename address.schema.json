@@ -49,7 +49,7 @@
     },
     "coordinate":  {
       "description": "",
-      "$ref": "http://cdn.rawgit.com/manutrix/cakemail-objects-definitions/master/coordinate.schema.json"
+      "$ref": "coordinate.schema.json"
     }
   },
   "required": ["default"],
