@@ -64,5 +64,6 @@
     }
   },
   "uniqueItems": true,
+  "required": ["name"],
   "additionalProperties": false
 }
