@@ -2,56 +2,41 @@
   "description": "Object that contains a physical address.",
   "type": "object",
   "properties": {
-    "default": {
-      "description": "Defines if this address is the main address. In an array of addresses, only one will have this value to TRUE.",
-      "type": "boolean",
-      "default" : true
-    },
     "type": {
       "description": "This value will be used to define a group of addresses. Multiple addresses will be able to have the same type. e.g.: Business, Home, ...",
       "type": "string"
     },
-    "name":   {
+    "name": {
       "description": "This value will be used to identify this specific address into the group. e.g.:type = business and name = office, type = business and name = billing",
       "type": "string"
     },
-    "number":  {
-      "description": "The street number.",
+    "streetAddress": {
+      "description": "The street address",
       "type": "string"
     },
-    "street":  {
-      "description": "The street name.",
-      "type": "string"
-    },
-    "app":  {
-      "description": "The apartment, suite, local, ...",
-      "type": "string"
-    },
-    "city":  {
+    "city": {
       "description": "The city name.",
       "type": "string"
     },
-    "zip":  {
+    "postalCode": {
       "description": "The zip code or postal code.",
       "type": "string"
     },
-    "state":  {
+    "state": {
       "description": "The state, province or region name.",
       "type": "string"
     },
-    "country":  {
+    "country": {
       "description": "The country name.",
       "type": "string"
     },
-    "timezone":  {
+    "timezone": {
       "description": "The timezone of the location.",
       "type": "string"
     },
-    "coordinate":  {
+    "coordinate": {
       "description": "",
       "$ref": "coordinate.schema.json"
     }
-  },
-  "required": ["default"],
-  "additionalProperties": false
+  }
 }
