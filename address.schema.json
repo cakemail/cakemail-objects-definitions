@@ -10,8 +10,12 @@
       "description": "This value will be used to identify this specific address into the group. e.g.:type = business and name = office, type = business and name = billing",
       "type": "string"
     },
-    "streetAddress": {
-      "description": "The street address",
+    "streetAddress1": {
+      "description": "The street address (line 1)",
+      "type": "string"
+    },
+    "streetAddress2": {
+      "description": "The street address (line 2)",
       "type": "string"
     },
     "city": {
