@@ -22,16 +22,16 @@
       "description": "",
       "type": "string"
     },
-    "files": {
+    "file": {
       "description": "",
-      "$ref": "#/definitions/files"
+      "$ref": "#/definitions/file"
     }
   },
   "required": ["files"],
   "additionalProperties": false,
 
   "definitions": {
-    "files": {
+    "file": {
       "type": "object",
       "properties": {
         "original": {

@@ -2,34 +2,45 @@
   "type": "object",
   "description": "",
   "properties": {
-    "color": {
+    "colors": {
+      "type": "object",
       "description": "",
-      "$ref": "#/definitions/color"
+      "$ref": "#/definitions/colors"
+
     },
-    "font": {
+    "fonts": {
+      "type": "object",
       "description": "",
-      "$ref": "#/definitions/font"
+      "$ref": "#/definitions/fonts"
     }
   },
   "additionalProperties": false,
   "anyOf": [
-     {"required": ["color"]},
-     {"required": ["font"]}
+    {"required": ["colors"]},
+    {"required": ["fonts"]}
   ],
 
   "definitions": {
-    "color": {
+    "colors": {
       "type": "object",
       "properties": {
         "primary": {
-          "description": "",
-          "type": "string",
-          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+          "description": "List of Primary Colors",
+          "type": "array",
+          "items" : {
+            "description": "",
+            "type": "string",
+            "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+          }
         },
-        "accent": {
+        "accents": {
           "description": "",
-          "type": "string",
-          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+          "type": "array",
+          "items" : {
+            "description": "",
+            "type": "string",
+            "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+          }
         }
       },
       "anyOf": [
@@ -39,16 +50,25 @@
       "additionalProperties": false
     },
 
-    "font": {
+
+    "fonts": {
       "type": "object",
       "properties": {
         "header": {
           "description": "",
-          "type": "string"
+          "type": "array",
+          "items": {
+            "description": "",
+            "type": "string"
+          }
         },
         "body": {
           "description": "",
-          "type": "string"
+          "type": "array",
+          "items": {
+            "description": "",
+            "type": "string"
+          }
         }
       },
       "anyOf": [

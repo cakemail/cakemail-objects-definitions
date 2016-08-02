@@ -11,7 +11,7 @@
       "items": { "type": "string" },
       "minItems": 1
     },
-    "logos":   {
+    "logo":   {
       "description": "",
       "$ref": "image.schema.json"
     },
@@ -22,8 +22,7 @@
     },
     "year_founded":  {
       "description": "",
-      "type": "integer",
-      "minimum": 1800
+      "type": "string"
     },
     "overview":  {
       "description": "",

@@ -34,14 +34,14 @@
       "description": "",
       "type": "string"
     },
-    "technology": {
+    "technologies": {
       "description": "",
       "type": "array",
       "items": {
         "$ref": "#/definitions/technology"
       }
     },
-    "rank": {
+    "ranks": {
       "description": "",
       "type": "array",
       "items": {
