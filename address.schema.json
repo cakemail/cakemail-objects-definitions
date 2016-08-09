@@ -41,6 +41,46 @@
     "coordinate": {
       "description": "",
       "$ref": "coordinate.schema.json"
+    },
+    "openingHours": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/openClose"
+      }
+    }
+  },
+
+  "definitions": {
+    "openClose": {
+      "type": "object",
+      "properties": {
+        "open": {
+          "description": "",
+          "$ref": "#/definitions/period"
+        },
+        "closed": {
+          "description": "",
+          "$ref": "#/definitions/period"
+        }
+      },
+      "additionalProperties": false
+    },
+    "period": {
+      "type": "object",
+      "properties": {
+        "day": {
+          "description": "",
+          "type": "integer",
+          "min": 0,
+          "max": 6
+        },
+        "time": {
+          "description": "",
+          "type": "integer"
+        }
+      },
+      "required": ["day", "time"],
+      "additionalProperties": false
     }
   }
 }
