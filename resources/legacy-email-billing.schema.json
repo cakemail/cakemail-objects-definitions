@@ -1,37 +1,53 @@
-type: object
-properties:
-  quantity:
-    type: integer
-  unitAverage:
-    type: number
-  amount:
-    type: number
-  deliverables:
-    type: array
-    items:
-      type: object
-      properties:
-        id:
-          type: string
-        description:
-          type: string
-        date:
-          type: string
-          format: date-time
-        quantity:
-          type: integer
-        amount:
-          type: number
-      required:
-        - id
-        - description
-        - date
-        - quantity
-        - amount
-      additionalProperties: false
-required:
-  - quantity
-  - unitAverage
-  - amount
-  - deliverables
-additionalProperties: false
+{
+  "type": "object",
+  "properties": {
+    "quantity": {
+      "type": "integer"
+    },
+    "unitAverage": {
+      "type": "number"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "amount": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "description",
+          "date",
+          "quantity",
+          "amount"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "quantity",
+    "unitAverage",
+    "amount",
+    "deliverables"
+  ],
+  "additionalProperties": false
+}

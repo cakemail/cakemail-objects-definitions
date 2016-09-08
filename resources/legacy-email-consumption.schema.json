@@ -1,28 +1,41 @@
-type: object
-properties:
-  quantity:
-    type: integer
-  deliverables:
-    type: array
-    items:
-      type: object
-      properties:
-        id:
-          type: string
-        description:
-          type: string
-        date:
-          type: string
-          format: date-time
-        quantity:
-          type: integer
-      required:
-        - id
-        - description
-        - date
-        - quantity
-      additionalProperties: false
-required:
-  - quantity
-  - deliverables
-additionalProperties: false
+{
+  "type": "object",
+  "properties": {
+    "quantity": {
+      "type": "integer"
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quantity": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "description",
+          "date",
+          "quantity"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "quantity",
+    "deliverables"
+  ],
+  "additionalProperties": false
+}
