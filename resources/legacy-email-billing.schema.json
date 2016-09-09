@@ -1,6 +1,9 @@
 {
   "type": "object",
   "properties": {
+    "resource": {
+      "type": "string"
+    },
     "quantity": {
       "type": "integer"
     },
@@ -44,6 +47,7 @@
     }
   },
   "required": [
+    "resource",
     "quantity",
     "unitAverage",
     "amount",
