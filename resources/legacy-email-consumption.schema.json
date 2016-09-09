@@ -31,8 +31,7 @@
           "description",
           "date",
           "quantity"
-        ],
-        "additionalProperties": false
+        ]
       }
     }
   },
@@ -40,6 +39,5 @@
     "resource",
     "quantity",
     "deliverables"
-  ],
-  "additionalProperties": false
+  ]
 }

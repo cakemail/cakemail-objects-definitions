@@ -41,8 +41,7 @@
           "date",
           "quantity",
           "amount"
-        ],
-        "additionalProperties": false
+        ]
       }
     }
   },
@@ -52,6 +51,5 @@
     "unitAverage",
     "amount",
     "deliverables"
-  ],
-  "additionalProperties": false
+  ]
 }
