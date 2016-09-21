@@ -7,29 +7,16 @@
     "quantity": {
       "type": "integer"
     },
-    "deliverables": {
+    "details": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "date": {
-            "type": "string",
-            "format": "date-time"
-          },
           "quantity": {
             "type": "integer"
           }
         },
         "required": [
-          "id",
-          "description",
-          "date",
           "quantity"
         ]
       }
@@ -37,7 +24,6 @@
   },
   "required": [
     "resource",
-    "quantity",
-    "deliverables"
+    "quantity"
   ]
 }

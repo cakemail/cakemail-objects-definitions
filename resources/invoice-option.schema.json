@@ -1,43 +1,23 @@
 {
   "type": "object",
   "properties": {
-    "unitAverage": {
-      "type": "number"
-    },
-    "deliverables": {
+    "details": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "date": {
-            "type": "string",
-            "format": "date-time"
-          },
           "quantity": {
             "type": "integer"
           },
-          "amount": {
+          "estimatedAmount": {
             "type": "number"
           }
         },
         "required": [
-          "id",
-          "description",
-          "date",
           "quantity",
-          "amount"
+          "estimatedAmount"
         ]
       }
     }
-  },
-  "required": [
-    "unitAverage",
-    "deliverables"
-  ]
+  }
 }
