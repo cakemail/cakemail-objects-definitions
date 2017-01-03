@@ -22,16 +22,16 @@
     "coordinate": {
       "type": "object",
       "properties": {
-        "long": {
+        "longitude": {
           "description": "The longitude value",
           "type": "string"
         },
-        "lat": {
+        "latitude": {
           "description": "The latitude value",
           "type": "string"
         }
       },
-      "required": ["long", "lat"],
+      "required": ["longitude", "latitude"],
       "additionalProperties": false
     }
   }

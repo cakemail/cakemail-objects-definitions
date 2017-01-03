@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "default": {
+    "isDefault": {
       "description": "Defines if this phone number is the main phone number. In an array of phones, only one will have this value to TRUE.",
       "type": "boolean",
       "default" : true
@@ -31,6 +31,6 @@
       "type": "string"
     }
   },
-  "required": ["default", "number"],
+  "required": ["isDefault", "number"],
   "additionalProperties": false
 }

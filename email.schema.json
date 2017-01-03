@@ -1,7 +1,7 @@
 {
   "type": "object",
   "properties": {
-    "default": {
+    "isDefault": {
       "description": "Defines if this email is the main phone number. In an array of emails, only one will have this value to TRUE.",
       "type": "boolean",
       "default" : true
@@ -28,6 +28,6 @@
       "type": "string"
     }
   },
-  "required": ["default", "address"],
+  "required": ["isDefault", "address"],
   "additionalProperties": false
 }
